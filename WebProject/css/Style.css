@@ -166,8 +166,9 @@ button {
 
 button:hover {
     background-color: transparent;
-    border: 2px solid #f9004d;
+    /* border: 2px solid #f9004d; */
     cursor: pointer;
+    transition: transform .4s;
 }
 
 
@@ -196,8 +197,9 @@ button:hover {
 }
 
 .card {
-    height: 365px;
-    width: 335px;
+    /* height: 365px; */
+    flex: 1;
+    /* width: 335px; */
     padding: 20px 35px;
     background: #191919;
     border-radius: 20px;
@@ -205,6 +207,7 @@ button:hover {
     position: relative;
     overflow: hidden;
     text-align: center;
+    justify-content: space-between;
 }
 
 .card i {
@@ -437,7 +440,7 @@ footer p:nth-child(2) {
     font-size: 14px;
 }
 
-@media (min-width:760px) and (max-width:1100px) {
+@media (min-width:761px) and (max-width:1113px) {
     .col_child .abc {
         height: auto;
         position: relative;
@@ -449,9 +452,119 @@ footer p:nth-child(2) {
         z-index: -1;
     }
 
+    .main {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-text {
+        width: auto;
+    }
+
+    .about img {
+        width: 80%;
+    }
+
     .logo {
         display: none;
     }
 }
 
-@media (max-width:760px) {}
+@media (min-width:450px) and (max-width:760px) {
+
+    nav ul {
+        display: none;
+
+    }
+
+    .pic {
+        height: 200px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+    }
+
+    .content h4 {
+        font-size: 15px;
+
+    }
+
+    .content h1 {
+        font-size: 60px;
+    }
+
+    .content h3 {
+        font-size: 15px;
+    }
+
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main h2 {
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+
+    .main img {
+        display: none;
+    }
+
+    .about-text {
+        width: 80%;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .about-text p {
+        text-align: justify;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 80%;
+        height: auto;
+    }
+
+    .box1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card1 {
+        width: 80%;
+        height: auto;
+    }
+
+    .col_parent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col_child {
+        height: 250px;
+        width: 80%;
+        flex: 1;
+    }
+
+    .col_child .abc {
+        height: 2auto;
+        position: relative;
+        transition: transform .6s;
+    }
+
+    footer p:nth-child(2) {
+        width: 80%;
+    }
+}

@@ -359,6 +359,7 @@ h5 {
     height: auto;
     position: relative;
     transition: transform .6s;
+    z-index: -1;
 }
 
 .col_child .abc:hover {
@@ -367,6 +368,7 @@ h5 {
 }
 
 .col_child .button {
+    z-index: 0;
     background-color: #f9004d;
     color: white;
     text-decoration: none;
@@ -559,10 +561,11 @@ footer p:nth-child(2) {
     }
 
     .col_child .abc {
-        height: 2auto;
+        height: auto;
         position: relative;
         transition: transform .6s;
     }
+
 
     footer p:nth-child(2) {
         width: 80%;
